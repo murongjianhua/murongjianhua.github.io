@@ -22553,6 +22553,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data() {
@@ -22887,7 +22888,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "\n.form-input-span[data-v-6ada34f4]{\n    position: fixed;\n    bottom: 40px;\n    display: flex;\n    width: 100%;\n    background-color: #fff;\n}\n.form-input-span input[data-v-6ada34f4] {\n    width: 80%;\n    border: none;\n}\n.form-input-span span[data-v-6ada34f4]{\n    display: inline-block;\n    width: 20%;\n    height: 40px;\n    line-height: 40px;\n    background-color: #b2e281;\n    text-align: center;\n    border-radius: 5px;\n}\n\n\n\n/**重置标签默认样式*/\n#container[data-v-6ada34f4] {\n    position: absolute;\n    \n    max-width: 100%;\n    /*height: 597px;*/\n    max-height: 597px;\n    background: #eee;\n    margin: 0;\n    position: relative;\n    box-sizing: content-box;\n    margin-top: 40px ;\n    margin-bottom: 90px;\n}\n\n/*div[data-v-21b2b79e]{\n}*/\nimg[data-v-6ada34f4] {\n    width: 35px;\n    height: 35px;\n}\n.content[data-v-6ada34f4] {\n    font-size: 20px;\n    width: 100%;\n    /*height: 580px;*/\n    overflow: auto;\n    padding: 5px;\n    margin-top: 0;\n}\n.content li[data-v-6ada34f4] {\n    margin-top: 0px;\n    margin-bottom: 3px;\n    padding-left: 10px;\n   max-width: 100%;\n    display: block;\n    clear: both;\n    overflow: hidden;\n}\n.content li img[data-v-6ada34f4] {\n    float: left;\n}\n.content li span[data-v-6ada34f4] {\n    background: #7cfc00;\n    padding: 5px;\n    border-radius: 10px;\n    float: left;\n    margin: 6px 10px 0 10px;\n    max-width: 70%;\n    border: 1px solid #ccc;\n    /*box-shadow: 0 0 3px #ccc;*/\n    font-size: 13px;\n}\n.content li img.imgleft[data-v-6ada34f4] {\n    float: left;\n}\n.content li img.imgright[data-v-6ada34f4] {\n    float: right;\n}\n.content li span.spanleft[data-v-6ada34f4] {\n    float: left;\n    background: #fff;\n}\n.content li span.spanright[data-v-6ada34f4] {\n    float: right;\n    background: #7cfc00;\n}\n", ""]);
+exports.push([module.i, "\n.form-input-span[data-v-6ada34f4]{\n    position: fixed;\n    bottom: 40px;\n    display: flex;\n    width: 100%;\n    background-color: #fff;\n}\n.form-input-span input[data-v-6ada34f4] {\n    width: 80%;\n    border: none;\n}\n.form-input-span span[data-v-6ada34f4]{\n    display: inline-block;\n    width: 20%;\n    height: 40px;\n    line-height: 40px;\n    background-color: #b2e281;\n    text-align: center;\n    border-radius: 5px;\n}\n\n\n\n/**重置标签默认样式*/\n#container[data-v-6ada34f4] {\n    position: absolute;\n    \n    max-width: 100%;\n    /*height: 597px;*/\n    max-height: 597px;\n    background: #eee;\n    margin: 0;\n    position: relative;\n    box-sizing: content-box;\n    margin-top: 40px ;\n    margin-bottom: 100px;\n}\n\n/*div[data-v-21b2b79e]{\n}*/\nimg[data-v-6ada34f4] {\n    width: 35px;\n    height: 35px;\n}\n.content[data-v-6ada34f4] {\n    font-size: 20px;\n    width: 100%;\n    /*height: 580px;*/\n    overflow: auto;\n    padding: 5px;\n    margin-top: 0;\n     margin-bottom: 90px;\n}\n.content li[data-v-6ada34f4] {\n    margin-top: 0px;\n    margin-bottom: 3px;\n    padding-left: 10px;\n   max-width: 100%;\n    display: block;\n    clear: both;\n    overflow: hidden;\n}\n.content li img[data-v-6ada34f4] {\n    float: left;\n}\n.content li span[data-v-6ada34f4] {\n    background: #7cfc00;\n    padding: 5px;\n    border-radius: 10px;\n    float: left;\n    margin: 6px 10px 0 10px;\n    max-width: 70%;\n    border: 1px solid #ccc;\n    /*box-shadow: 0 0 3px #ccc;*/\n    font-size: 13px;\n}\n.content li img.imgleft[data-v-6ada34f4] {\n    float: left;\n}\n.content li img.imgright[data-v-6ada34f4] {\n    float: right;\n}\n.content li span.spanleft[data-v-6ada34f4] {\n    float: left;\n    background: #fff;\n}\n.content li span.spanright[data-v-6ada34f4] {\n    float: right;\n    background: #7cfc00;\n}\n", ""]);
 
 // exports
 
@@ -33454,11 +33455,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('span', {
     staticClass: "mui-icon mui-icon-email"
-  }, [_c('span', {
-    staticClass: "mui-badge"
-  }, [_vm._v("1")])]), _vm._v(" "), _c('span', {
+  }), _vm._v(" "), _c('span', {
     staticClass: "mui-tab-label"
-  }, [_vm._v("消息")])]), _vm._v(" "), _c('router-link', {
+  }, [_vm._v("聊天")])]), _vm._v(" "), _c('router-link', {
     staticClass: "mui-tab-item",
     attrs: {
       "to": "/recipes/recipesList"
@@ -33467,7 +33466,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "mui-icon mui-icon-contact"
   }), _vm._v(" "), _c('span', {
     staticClass: "mui-tab-label"
-  }, [_vm._v("通讯录")])]), _vm._v(" "), _c('router-link', {
+  }, [_vm._v("菜谱")])]), _vm._v(" "), _c('router-link', {
     staticClass: "mui-tab-item",
     attrs: {
       "to": "/setting"
