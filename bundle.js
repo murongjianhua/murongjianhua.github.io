@@ -22549,62 +22549,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data() {
@@ -22626,7 +22570,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 info: this.inputVal,
                 key: '89438753f54a49fcb599087ab4d2ef1f'
             }, { emulateJSON: true }).then(res => {
-                console.log(res);
+                // console.log(res)
                 if (res.status == 200) {
                     //   this.robotDataArr = res.body.result.data
                     this.robotData += '<li data-v-6ada34f4=""><img data-v-6ada34f4="" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495108399109&di=5d9678936c0311d52da01ad90898d1b5&imgtype=0&src=http%3A%2F%2Fdesk.3987.com%2Fuploadfile%2F2014%2F0401%2F20140401031110262.jpg" class="left"><span data-v-6ada34f4="" class="spanleft ">' + res.body.text + '</span></li>';
@@ -22939,7 +22883,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "\n.form-input-span[data-v-6ada34f4]{\n    position: fixed;\n    bottom: 40px;\n    display: flex;\n    width: 100%;\n    background-color: #fff;\n}\n.form-input-span input[data-v-6ada34f4] {\n    width: 80%;\n    border: none;\n}\n.form-input-span span[data-v-6ada34f4]{\n    display: inline-block;\n    width: 20%;\n    height: 40px;\n    line-height: 40px;\n    background-color: #b2e281;\n    text-align: center;\n    border-radius: 5px;\n}\n\n\n\n/**重置标签默认样式*/\n#container[data-v-6ada34f4] {\n    position: absolute;\n    \n    max-width: 400px;\n    /*height: 597px;*/\n    max-height: 597px;\n    background: #eee;\n    margin: 0;\n    position: relative;\n    box-sizing: content-box;\n}\n.header[data-v-6ada34f4] {\n    background: #000;\n    height: 40px;\n    color: #fff;\n    line-height: 34px;\n    font-size: 20px;\n    padding: 0 10px;\n}\n.footer[data-v-6ada34f4] {\n    width: 430px;\n    height: 50px;\n    background: #666;\n    position: absolute;\n    bottom: 0;\n    padding: 10px;\n}\n.footer input[data-v-6ada34f4] {\n    width: 275px;\n    height: 45px;\n    outline: none;\n    font-size: 20px;\n    text-indent: 10px;\n    position: absolute;\n    border-radius: 6px;\n    right: 80px;\n}\n.footer span[data-v-6ada34f4] {\n    display: inline-block;\n    width: 62px;\n    height: 48px;\n    background: #ccc;\n    font-weight: 900;\n    line-height: 45px;\n    cursor: pointer;\n    text-align: center;\n    position: absolute;\n    right: 10px;\n    border-radius: 6px;\n}\n.footer span[data-v-6ada34f4]:hover {\n    color: #fff;\n    background: #999;\n}\n#user_face_icon[data-v-6ada34f4] {\n    display: inline-block;\n    background: red;\n    width: 60px;\n    height: 60px;\n    border-radius: 30px;\n    position: absolute;\n    bottom: 6px;\n    left: 14px;\n    cursor: pointer;\n    overflow: hidden;\n}\nimg[data-v-6ada34f4] {\n    width: 60px;\n    height: 60px;\n}\n.content[data-v-6ada34f4] {\n    font-size: 20px;\n    width: 412px;\n    /*height: 580px;*/\n    overflow: auto;\n    padding: 5px;\n    margin-top: 0;\n}\n.content li[data-v-6ada34f4] {\n    margin-top: 0px;\n    margin-bottom: 3px;\n    padding-left: 10px;\n    max-width: 400px;\n    display: block;\n    clear: both;\n    overflow: hidden;\n}\n.content li img[data-v-6ada34f4] {\n    float: left;\n}\n.content li span[data-v-6ada34f4] {\n    background: #7cfc00;\n    padding: 10px;\n    border-radius: 10px;\n    float: left;\n    margin: 6px 10px 0 10px;\n    max-width: 310px;\n    border: 1px solid #ccc;\n    /*box-shadow: 0 0 3px #ccc;*/\n}\n.content li img.imgleft[data-v-6ada34f4] {\n    float: left;\n}\n.content li img.imgright[data-v-6ada34f4] {\n    float: right;\n}\n.content li span.spanleft[data-v-6ada34f4] {\n    float: left;\n    background: #fff;\n}\n.content li span.spanright[data-v-6ada34f4] {\n    float: right;\n    background: #7cfc00;\n}\n", ""]);
+exports.push([module.i, "\n.form-input-span[data-v-6ada34f4]{\n    position: fixed;\n    bottom: 40px;\n    display: flex;\n    width: 100%;\n    background-color: #fff;\n}\n.form-input-span input[data-v-6ada34f4] {\n    width: 80%;\n    border: none;\n}\n.form-input-span span[data-v-6ada34f4]{\n    display: inline-block;\n    width: 20%;\n    height: 40px;\n    line-height: 40px;\n    background-color: #b2e281;\n    text-align: center;\n    border-radius: 5px;\n}\n\n\n\n/**重置标签默认样式*/\n#container[data-v-6ada34f4] {\n    position: absolute;\n    \n    max-width: 100%;\n    /*height: 597px;*/\n    max-height: 597px;\n    background: #eee;\n    margin: 0;\n    position: relative;\n    box-sizing: content-box;\n}\nimg[data-v-6ada34f4] {\n    width: 35px;\n    height: 35px;\n}\n.content[data-v-6ada34f4] {\n    font-size: 20px;\n    width: 100%;\n    /*height: 580px;*/\n    overflow: auto;\n    padding: 5px;\n    margin-top: 0;\n}\n.content li[data-v-6ada34f4] {\n    margin-top: 0px;\n    margin-bottom: 3px;\n    padding-left: 10px;\n   max-width: 100%;\n    display: block;\n    clear: both;\n    overflow: hidden;\n}\n.content li img[data-v-6ada34f4] {\n    float: left;\n}\n.content li span[data-v-6ada34f4] {\n    background: #7cfc00;\n    padding: 5px;\n    border-radius: 10px;\n    float: left;\n    margin: 6px 10px 0 10px;\n    max-width: 70%;\n    border: 1px solid #ccc;\n    /*box-shadow: 0 0 3px #ccc;*/\n    font-size: 13px;\n}\n.content li img.imgleft[data-v-6ada34f4] {\n    float: left;\n}\n.content li img.imgright[data-v-6ada34f4] {\n    float: right;\n}\n.content li span.spanleft[data-v-6ada34f4] {\n    float: left;\n    background: #fff;\n}\n.content li span.spanright[data-v-6ada34f4] {\n    float: right;\n    background: #7cfc00;\n}\n", ""]);
 
 // exports
 
