@@ -22492,6 +22492,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   },
   created() {
     this.dataAjax();
+    this.title();
   },
   methods: {
     dataAjax() {
@@ -22505,6 +22506,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     cardchang() {
       var randoms = Math.floor(Math.random() * this.dataArr.length - 1);
+    },
+    title() {
+      document.title.innrText = '笑话';
     }
   }
 });
