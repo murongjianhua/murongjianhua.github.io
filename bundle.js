@@ -22500,7 +22500,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       this.$http.get(url).then(res => {
         this.dataArr = res.body;
         // console.log(res)
-        document.getElementById.innrText = '笑话';
+        document.getElementById('mint-header-title').innrText = '笑话';
       }, err => {
         console.log(err);
       });
@@ -33520,7 +33520,10 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   return _c('div', [_c('header', {
     staticClass: "mint-header"
   }, [_vm._m(0), _vm._v(" "), _c('h1', {
-    staticClass: "mint-header-title"
+    staticClass: "mint-header-title",
+    attrs: {
+      "id": "mint-header-title"
+    }
   }, [_vm._v("WEB\n        ")]), _vm._v(" "), _c('div', {
     staticClass: "mint-header-button is-right"
   }, [_c('button', {
