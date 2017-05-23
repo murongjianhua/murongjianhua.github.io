@@ -22495,7 +22495,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   },
   methods: {
     dataAjax() {
-      const url = './joke.json';
+      const url = './jokePicture.json';
       this.$http.get(url).then(res => {
         this.dataArr = res.body;
         // console.log(res)
@@ -33615,8 +33615,8 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       directives: [{
         name: "lazy",
         rawName: "v-lazy",
-        value: (item.content),
-        expression: "item.content"
+        value: (item.thumburl),
+        expression: "item.thumburl"
       }],
       attrs: {
         "alt": ""
