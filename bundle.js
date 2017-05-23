@@ -22497,7 +22497,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     dataAjax() {
       const url = './joke.json';
       this.$http.get(url).then(res => {
-        dataArr = res.body;
+        this.dataArr = res.body;
         // console.log(res)
       }, err => {
         console.log(err);
