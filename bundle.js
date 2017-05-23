@@ -22587,7 +22587,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   methods: {
     dataAjax() {
       // document.getElementById("")
-
       const url = './jokePicture.json';
       this.$http.get(url).then(res => {
         this.dataArr = res.body;
@@ -33613,7 +33612,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "id": "mint-header-title"
     }
-  }, [_vm._v(_vm._s(_vm.titleText) + "\n        ")]), _vm._v(" "), _c('div', {
+  }, [_vm._v("小5\n        ")]), _vm._v(" "), _c('div', {
     staticClass: "mint-header-button is-right"
   }, [_c('button', {
     staticClass: "mint-button mint-button--default mint-button--normal"
