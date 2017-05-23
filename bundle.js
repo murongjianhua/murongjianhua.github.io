@@ -22462,6 +22462,27 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data() {
@@ -22476,10 +22497,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     dataAjax() {
       const url = 'joke.json';
       this.$http.get(url).then(res => {
-        console.log(res, 'dfgfdg g ');
+        dataArr = res.body;
+        // console.log(res)
       }, err => {
         console.log(err);
       });
+    },
+    cardchang() {
+      var randoms = Math.floor(Math.random() * this.dataArr.length - 1);
     }
   }
 });
@@ -22490,6 +22515,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
 //
 //
 //
@@ -22755,6 +22781,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -22928,7 +22955,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "\n.color-glay[data-v-4cac5ad6]{\r\n  background-color: #efeff4;\n}\n.mui-card[data-v-4cac5ad6]{\r\n  padding: 2px;\n}\n.mui-card  img[data-v-4cac5ad6]{\r\n    width: 100%;\r\n    height: 186px;\n}\n.mui-card-content-inner[data-v-4cac5ad6]{\r\n    padding: 5px;\n}\r\n", ""]);
+exports.push([module.i, "\nli[data-v-4cac5ad6]{\n  width: 100%;\n  /*height: 500px;*/\n  border: 1px solid #ccc;\n  border-radius: 5px;\n  background-color: #fff;\n  padding: 2px;\n  margin: 5px 0;\n}\nul[data-v-4cac5ad6]{\n  margin: 0;\n  padding: 10px;\n}\nh4[data-v-4cac5ad6]{\n  color: #0094ff;\n  text-align: center;\n}\nimg[data-v-4cac5ad6]{\n  width: 100%;\n}\n", ""]);
 
 // exports
 
@@ -22942,7 +22969,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "\n.listdata[data-v-511d9380] {\n/*border: 1px solid #0094ff;*/\nfloat: left;\nmargin: 2px;\n}\n.bgc-color[data-v-511d9380]{\n  background-color: #fff;\n}\n.mui-card .mui-table-view .mui-collapse-content[data-v-511d9380] {\nbackground-color: #f5f5d5\n}\n", ""]);
+exports.push([module.i, "\n.listdata[data-v-511d9380] {\n/*border: 1px solid #0094ff;*/\nfloat: left;\nmargin: 2px;\n}\n.bgc-color[data-v-511d9380]{\n  background-color: #fff;\n}\n.mui-card .mui-table-view .mui-collapse-content[data-v-511d9380] {\nbackground-color: #f5f5d5\n}\n\n", ""]);
 
 // exports
 
@@ -22956,7 +22983,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "\n.form-input-span[data-v-6ada34f4]{\n    position: fixed;\n    bottom: 40px;\n    display: flex;\n    width: 100%;\n    background-color: #fff;\n}\n.form-input-span input[data-v-6ada34f4] {\n    width: 80%;\n    border: none;\n}\n.form-input-span span[data-v-6ada34f4]{\n    display: inline-block;\n    width: 20%;\n    height: 40px;\n    line-height: 40px;\n    background-color: #b2e281;\n    text-align: center;\n    border-radius: 5px;\n}\n\n\n\n/**重置标签默认样式*/\n#container[data-v-6ada34f4] {\n    position: absolute;\n    \n    max-width: 100%;\n    /*height: 597px;*/\n    max-height: 597px;\n    background: #eee;\n    margin: 0;\n    position: relative;\n    box-sizing: content-box;\n    margin-top: 40px ;\n    margin-bottom: 100px;\n}\n\n/*div[data-v-21b2b79e]{\n}*/\nimg[data-v-6ada34f4] {\n    width: 35px;\n    height: 35px;\n}\n.content[data-v-6ada34f4] {\n    font-size: 20px;\n    width: 100%;\n    /*height: 580px;*/\n    overflow: auto;\n    padding: 5px;\n    margin-top: 0;\n     margin-bottom: 90px;\n}\n.content li[data-v-6ada34f4] {\n    margin-top: 0px;\n    margin-bottom: 3px;\n    padding-left: 10px;\n   max-width: 100%;\n    display: block;\n    clear: both;\n    overflow: hidden;\n}\n.content li img[data-v-6ada34f4] {\n    float: left;\n}\n.content li span[data-v-6ada34f4] {\n    background: #7cfc00;\n    padding: 5px;\n    border-radius: 10px;\n    float: left;\n    margin: 6px 10px 0 10px;\n    max-width: 70%;\n    border: 1px solid #ccc;\n    /*box-shadow: 0 0 3px #ccc;*/\n    font-size: 13px;\n}\n.content li img.imgleft[data-v-6ada34f4] {\n    float: left;\n}\n.content li img.imgright[data-v-6ada34f4] {\n    float: right;\n}\n.content li span.spanleft[data-v-6ada34f4] {\n    float: left;\n    background: #fff;\n}\n.content li span.spanright[data-v-6ada34f4] {\n    float: right;\n    background: #7cfc00;\n}\n", ""]);
+exports.push([module.i, "\n.form-input-span[data-v-6ada34f4]{\n    position: fixed;\n    bottom: 40px;\n    display: flex;\n    width: 100%;\n    background-color: #fff;\n}\n.form-input-span input[data-v-6ada34f4] {\n    width: 80%;\n    border: none;\n}\n.form-input-span span[data-v-6ada34f4]{\n    display: inline-block;\n    width: 20%;\n    height: 40px;\n    line-height: 40px;\n    background-color: #b2e281;\n    text-align: center;\n    border-radius: 5px;\n}\n\n\n\n/**重置标签默认样式*/\n#container[data-v-6ada34f4] {\n    position: absolute;\n    \n    max-width: 100%;\n    /*height: 597px;*/\n    max-height: 597px;\n    background: #eee;\n    margin: 0;\n    position: relative;\n    box-sizing: content-box;\n    /*margin-top: 40px ;\n    */\n    /*margin-bottom: 100px;*/\n}\n\n/*div[data-v-21b2b79e]{\n}*/\nimg[data-v-6ada34f4] {\n    width: 35px;\n    height: 35px;\n}\n.content[data-v-6ada34f4] {\n    font-size: 20px;\n    width: 100%;\n    /*height: 580px;*/\n    overflow: auto;\n    padding: 5px;\n    margin-top: 0;\n     margin-bottom: 90px;\n}\n.content li[data-v-6ada34f4] {\n    margin-top: 0px;\n    margin-bottom: 3px;\n    padding-left: 10px;\n   max-width: 100%;\n    display: block;\n    clear: both;\n    overflow: hidden;\n}\n.content li img[data-v-6ada34f4] {\n    float: left;\n}\n.content li span[data-v-6ada34f4] {\n    background: #7cfc00;\n    padding: 5px;\n    border-radius: 10px;\n    float: left;\n    margin: 6px 10px 0 10px;\n    max-width: 70%;\n    border: 1px solid #ccc;\n    /*box-shadow: 0 0 3px #ccc;*/\n    font-size: 13px;\n}\n.content li img.imgleft[data-v-6ada34f4] {\n    float: left;\n}\n.content li img.imgright[data-v-6ada34f4] {\n    float: right;\n}\n.content li span.spanleft[data-v-6ada34f4] {\n    float: left;\n    background: #fff;\n}\n.content li span.spanright[data-v-6ada34f4] {\n    float: right;\n    background: #7cfc00;\n}\n", ""]);
 
 // exports
 
@@ -22984,7 +23011,7 @@ exports = module.exports = __webpack_require__(0)(undefined);
 
 
 // module
-exports.push([module.i, "body{\r\n    background-color: #efeff4;\r\n    margin-bottom: 40px;\r\n    /*height: 100%;*/\r\n\r\n}\r\nhtml{\r\n    /*height: 100%;*/\r\n}\r\n.mui-active1{\r\n    color: #0094fe;\r\n}\r\n.mint-header{\r\n    position: fixed;\r\n    width: 100%;    \r\n    z-index: 1000;\r\n    top: 0px;\r\n    left: 0px;\r\n}", ""]);
+exports.push([module.i, "body{\r\n    background-color: #efeff4;\r\n    margin-bottom: 40px;\r\n    /*height: 100%;*/\r\n    padding-top: 40px;\r\n    /*padding-bottom: 50px;   */\r\n}\r\nhtml{\r\n    /*height: 100%;*/\r\n}\r\n.mui-active1{\r\n    color: #0094fe;\r\n}\r\n.mint-header{\r\n    position: fixed;\r\n    width: 100%;    \r\n    z-index: 1000;\r\n    top: 0px;\r\n    left: 0px;\r\n}\r\n    .mui-content{\r\n      margin-bottom:60px; \r\n      border-radius: 5px;\r\n    }", ""]);
 
 // exports
 
@@ -33575,10 +33602,28 @@ if (false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _vm._m(0)
-},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
-  return _c('div', [_c('h1', [_vm._v("daish djnajkd j")]), _vm._v(" "), _c('h1', [_vm._v("daish djnajkd j")])])
-}]}
+  return _c('div', [_c('div', {
+    staticClass: "content"
+  }, [_c('ul', {
+    on: {
+      "click": function($event) {
+        _vm.cardchang()
+      }
+    }
+  }, _vm._l((_vm.dataArr), function(item) {
+    return _c('li', [_c('h4', [_vm._v(_vm._s(item.title))]), _vm._v(" "), _c('img', {
+      directives: [{
+        name: "lazy",
+        rawName: "v-lazy",
+        value: (item.content),
+        expression: "item.content"
+      }],
+      attrs: {
+        "alt": ""
+      }
+    })])
+  }))])])
+},staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
   module.hot.accept()
