@@ -22500,7 +22500,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       this.$http.get(url).then(res => {
         this.dataArr = res.body;
         // console.log(res)
-        document.title.innrText = '笑话';
+        document.getElementById.innrText = '笑话';
       }, err => {
         console.log(err);
       });
