@@ -22749,7 +22749,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 // console.log(res)
                 if (res.status == 200) {
                     //   this.robotDataArr = res.body.result.data
-                    this.robotData += '<li data-v-6ada34f4=""><img data-v-6ada34f4="" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495108399109&di=5d9678936c0311d52da01ad90898d1b5&imgtype=0&src=http%3A%2F%2Fdesk.3987.com%2Fuploadfile%2F2014%2F0401%2F20140401031110262.jpg" class="left"><span data-v-6ada34f4="" class="spanleft ">' + res.body.text + '</span></li>';
+                    this.robotData += '<li data-v-6ada34f4=""><img data-v-6ada34f4="" src="http://img3.imgtn.bdimg.com/it/u=4201087462,1273687593&fm=26&gp=0.jpg" class="left"><span data-v-6ada34f4="" class="spanleft ">' + res.body.text + '</span></li>';
                     document.querySelector('.content').innerHTML = this.robotData;
                     this.inputVal = '';
                 }
@@ -33841,7 +33841,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "left",
     attrs: {
       "data-v-6ada34f4": "",
-      "src": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495108399109&di=5d9678936c0311d52da01ad90898d1b5&imgtype=0&src=http%3A%2F%2Fdesk.3987.com%2Fuploadfile%2F2014%2F0401%2F20140401031110262.jpg"
+      "src": "http://img3.imgtn.bdimg.com/it/u=4201087462,1273687593&fm=26&gp=0.jpg"
     }
   }), _c('span', {
     staticClass: "spanleft ",
