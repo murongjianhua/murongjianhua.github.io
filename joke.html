@@ -22,12 +22,12 @@
         url: "joke.json",
         type: "get",
         success: function (data) {
-            $('p').html(data[i].title)
-            $('h5').html(data[i].content)
+            $('p').html(data[i].content)
+            $('h5').html(data[i].title)
             document.querySelector('p').addEventListener("click", function () {
                  i=Math.floor(Math.random()*data.length)
-                $('p').html(data[i].title)
-                $('h5').html(data[i].content)
+                $('p').html(data[i].content)
+                $('h5').html(data[i].title)
             })
         }
     })
