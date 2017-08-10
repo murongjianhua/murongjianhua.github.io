@@ -16,14 +16,17 @@
 </html>
 <script src="https://unpkg.com/jquery"></script>
 <script>
-    var i=0
+    // var i=0
+    var i=Math.floor(Math.random()*data.length)
     $.ajax({
         url: "jokePicture.json",
         type: "get",
         success: function (data) {
             $('img').attr('src',data[0].thumburl)
+            $('p').html(data[0].title)
             document.querySelector('img').addEventListener("click", function () {
-                i++;
+                // i++;
+                 i=Math.floor(Math.random()*data.length)
                 $("img").attr("src",data[i].thumburl)
                 $('p').html(data[i].title)
             })
