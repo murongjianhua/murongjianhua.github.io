@@ -22,8 +22,8 @@
         url: "jokePicture.json",
         type: "get",
         success: function (data) {
-            $('img').attr('src',data[0].thumburl)
-            $('p').html(data[0].title)
+            $('img').attr('src',data[i].thumburl)
+            $('p').html(data[i].title)
             document.querySelector('img').addEventListener("click", function () {
                 // i++;
                  i=Math.floor(Math.random()*data.length)
