@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="MobileOptimized" content="320">
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>dom</title>
+    <style type="text/css" media="screen">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .screen {
+        background: #ff5566;
+        color: white;
+        height: 900px;
+        text-align: center;
+        font-size: 50px;
+        overflow: hidden;
+    }
+    
+    ul {
+        list-style-type: none;
+        list-style-position: outside;
+    }
+    
+    li {
+        float: left;
+        width: 100px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="wrap" class="screen">
+        <p>按下enter开始，空格暂停</p>
+        <ul class="staff-list-ul">
+        </ul>
+    </div>
+</body>
+<script src="https://gxt19940130.github.io/demo/js/vue.js" type="text/javascript"></script>
+<script src="https://gxt19940130.github.io/demo/js/jquery-3.1.0.js" type="text/javascript"></script>
+<script type="text/javascript">
+var Dom = Vue.extend({ 
+    template: "wrap"
+});
+new Vue({
+    ready() {
+        this.initStaffList();
+        var _me = this;
+        $(window).on('keyup', function(e) {
+            if (e.keyCode == 13) {
+                _me.beginDraw();
+            }
+            if (e.keyCode == 32) {
+                _me.showWinner();
+            }
+        })
+    },
+    el: '#wrap',
+    data() {
+        return {
+            arr: [],
+            staffList: [],
+            staffNum: 100,
+            stop: false
+        }
+    },
+    methods: {
+        initStaffList() {
+            var list = [];
+            for (var i = 0; i < 400; i++) {
+                list[i] = Math.round(Math.random() * 100);
+            }
+            this.staffList = list;
+        },
+        // 请求员工信息
+        getStaffList() {
+            this.initStaffList();
+            $(".staff-list-ul").html("");
+            var _li = $("<li>");
+            for (var i = 0; i < this.staffNum; i++) {
+                $(".staff-list-ul").append(_li.clone());
+            }
+            this.listRolling(this.staffList);
+        },
+        // 循环滚动列表
+        listRolling(data) {
+            var _lis = document.getElementsByTagName("li"),
+                _name = $('<div>'),
+                _phone = $('<div>');
+
+            clearTimeout(window.timer);
+            window.timer = setTimeout(() => {
+                for (var i = 0; i < _lis.length; i++) {
+                    var x = $(_lis[i]).html('');
+                    x.append(_name.clone().text(data[this.getRandom(0, data.length - 1)]));
+                    x.append(_phone.clone().text(data[this.getRandom(0, data.length - 1)]));
+                }
+                this.listRolling(data);
+            }, 10)
+        },
+        // 开始抽奖
+        beginDraw() {
+            clearTimeout(window.timer);
+            this.getStaffList();
+        },
+        // 显示中奖者信息
+        showWinner() {
+            // $(".staff-list-ul").html("");
+
+            clearTimeout(window.timer);
+
+            // var _name = $('<div>'),
+            //     _phone = $('<div>');
+            // this.winnerList = this.staffList;
+            // for (var i = 0; i < this.winnerList.length; i++) {
+            //     var _li = $('<li>');
+            //     _li.append(_name.clone().text(this.winnerList[i]));
+            //     _li.append(_phone.clone().text(this.winnerList[i]));
+            //     $(".staff-list-ul").append(_li);
+            // }
+        },
+        // 随机数
+        getRandom(min, max) {
+            return parseInt(Math.random() * (max - min + 1));
+        }
+    },
+    components: {
+        "wrap": Dom
+    }
+})
+</script>
+
+</html>
