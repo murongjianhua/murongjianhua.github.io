@@ -14,6 +14,11 @@
             /*vertical-align:middle;*/
             /*position: relative;*/
         }
+        body{
+            width:300px;
+            height300px;
+            margin:0 auto;
+        }
     </style>
 </head>
 
@@ -25,8 +30,8 @@
     <script>
         window.onload = function () {
             var qrcode = new QRCode(document.getElementById("qrcode"), {
-                width: 96, //设置宽高
-                height: 96
+                width: 150, //设置宽高
+                height: 150
             });
             qrcode.makeCode("http://www.murongjianhua.top/qrcode.html");
             document.getElementById("send").onclick = function () {
