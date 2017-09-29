@@ -197,47 +197,27 @@ $lintColor: #de2f51;
 }
 
 
-/**
- *  移动设备常用mediaquery
- *  应用于1024px以下设备
- *  移动设备的基本字体为16px
- */
-@media screen and (min-width : 640px) and (max-width :2000px) {
-    html {
-        font-size:20.7px;
+// 计算rem的基准字体
+$rem-base-font-size: 64;
+
+// UI设计图的分辨率宽度
+$UI-resolution-width: 1440px;
+
+// 需要适配的屏幕宽度
+$device-widths: 240px, 320px, 360px, 375px, 412px, 480px, 540px, 640px, 720px, 768px, 1024px, 1440px;
+// 根据不同设备的屏幕宽度，定义<html>的基准font-size
+@mixin html-font-size() {
+    @each $current-width in $device-widths {
+        @media (min-width: $current-width) {
+            html {
+                $x: $UI-resolution-width / $current-width;  // 计算出是几倍屏
+                font-size: $rem-base-font-size / $x;
+            }
+        }
     }
-    body{
-      max-width:640px;
-    }
 }
-
-@media screen and (max-width : 423px) and (min-width : 414px) {
-    html {
-        font-size:20.7px;
-    } 
+@include html-font-size();
+// 将设计图标注的px尺寸，转换为相应的CSS
+@function s($px) {
+    @return $px / $rem-base-font-size * 1rem;
 }
-
-@media screen and (max-width : 413px) and (min-width : 384px) {
-    html {
-        font-size:19.2px;
-    } 
-}
-
-@media screen and (max-width : 383px) and (min-width : 375px) {
-    html {
-        font-size:18.75px;
-    } 
-}
-
-@media screen and (max-width : 374px) and (min-width : 360px) {
-    html {
-        font-size:18px;
-    } 
-}
-
-@media screen and (max-width : 359px) and (min-width : 320px) {
-    html {
-        font-size:16px;
-    } 
-}
-
