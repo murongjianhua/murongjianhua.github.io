@@ -1,0 +1,243 @@
+/*- reset -*/
+$prefix-context: -webkit;
+@include reset-html5;
+html {
+    -webkit-text-size-adjust:none;
+    -webkit-appearance:none;
+}
+html,body,div,p,header{
+    @include reset-box-model;
+    @include reset-font;
+}
+html {
+    @include reset-body;
+    font-family: Helvetica,sans-serif;
+}
+a {
+    text-decoration: none;
+}
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,body{
+  font-family:"Microsoft YaHei",sans-serif;
+}
+
+/* custom */
+a {
+  color: #7e8c8d;
+  text-decoration: none;
+  -webkit-backface-visibility: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  background-color: rgba(125, 125, 125, 0.7);
+  -webkit-border-radius: 6px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+   letter-spacing:1px;
+   margin: 0 auto;   
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  line-height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0
+}
+
+button, input {
+  overflow: visible
+}
+
+button, select {
+  text-transform: none
+}
+
+button, html [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button
+}
+
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0
+}
+
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText
+}
+
+$backColor: #f2f1f3;
+$titleColor: #333;
+$fontColor: #999;
+$lintColor: #de2f51;
+
+
+// 移动端去除标签的点击样式
+ a,button,input{-webkit-tap-highlight-color:rgba(255,0,0,0);}
+
+
+ // 这个文件是新建项目时默认引用的css样式文件，所有活动页面的字体单位全部使用rem
+//背景图片处理
+@mixin backgroundImg($value) {
+  background-image: $value;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+//超出多少像素则显示省略号
+@mixin omitWord($value) {
+  width: $value;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  overflow: hidden;
+}
+//在使用雪碧图的时候计算放大倍数
+@function percent($new, $old){
+  @return ($new / $old) * 100%;
+}
+
+
+/**
+ *  移动设备常用mediaquery
+ *  应用于1024px以下设备
+ *  移动设备的基本字体为16px
+ */
+@media screen and (min-width : 640px) and (max-width :2000px) {
+    html {
+        font-size:20.7px;
+    }
+    body{
+      max-width:640px;
+    }
+}
+
+@media screen and (max-width : 423px) and (min-width : 414px) {
+    html {
+        font-size:20.7px;
+    } 
+}
+
+@media screen and (max-width : 413px) and (min-width : 384px) {
+    html {
+        font-size:19.2px;
+    } 
+}
+
+@media screen and (max-width : 383px) and (min-width : 375px) {
+    html {
+        font-size:18.75px;
+    } 
+}
+
+@media screen and (max-width : 374px) and (min-width : 360px) {
+    html {
+        font-size:18px;
+    } 
+}
+
+@media screen and (max-width : 359px) and (min-width : 320px) {
+    html {
+        font-size:16px;
+    } 
+}
+
